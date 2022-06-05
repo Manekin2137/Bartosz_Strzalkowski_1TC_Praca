@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style7.css">
+</head>
+<body>
+    <h1 id="up">Thor</h1>
+    <div class="topnav">
+        <a href="#gallery-container">Galeria zdjęć</a>
+        <a href="#inf">Ciekawe informacje</a>
+        <a href="#carrer">Kariera filmowa</a>
+        <a href="#film">Inne ciekawe strony</a>
+        <a href="#ops"> Krótki opis</a>
+      </div>
+        <br>
+    <div id="gallery-container">
+    <div class="row">
+        <div class="column">
+          <img src="foto/Thor1.jpg" alt=obraz onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/Thor2.jpg" alt=obraz onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/Thor3.jpg" alt=obraz onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="foto/Thor1.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="foto/Thor2.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="foto/Thor3.jpg" style="width:100%" alt=obraz>
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/Thor1.jpg" onclick="currentSlide(1)" alt=" Elektryczny Thor">
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/Thor2.jpg" onclick="currentSlide(2)" alt="Thor podczas walki">
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/Thor3.jpg" onclick="currentSlide(3)" alt="Zdziwiony Thor">
+          </div>
+        </div>
+    </div>
+</div>
+<br>
+<table>
+  <caption id="inf">Ciekawe informacje</caption>
+    <tr>
+        <td>Pochodzenie</td>
+        <td>Asgardzkie</td>
+    </tr>
+    <tr>
+        <td>Płeć</td>
+        <td>Mężczyzna</td>
+    </tr>
+    <tr>
+        <td>Kolor włosów</td>
+        <td>Blond</td>
+    </tr>
+    <tr>
+        <td>Miejsce zamieszkania</td>
+        <td>Jaskinia w Norwegii</td>
+    </tr>
+    <tr>
+        <td>Umiejętność</td>
+        <td>Młot</td>
+    </tr>
+    <tr>
+        <td>Zawód</td>
+        <td>Wojownik</td>
+    </tr>
+    <tr>
+        <td>Twórca</td>
+        <td>Stan Lee</td>
+    </tr>
+</table>
+<div id="film">Popularne filmy z Thorem:</div>
+<br>
+<ul>
+    <li>Avengers: Wojna bez granic (2018)</li>
+    <li>Avengers: Koniec Gry (2019)</li>
+    <li>Thor: Love and Thunder (2022)</li>
+    <li>Thor: Mroczny świat (2013)</li>
+</ul>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a class=comeback href="#up">Na początek</a>
+<div id="ops">
+  <p id=informs>Thor jest aroganckim wojownikiem, który za nierozważne działania zostaje wygnany z Asgardu przez swojego ojca Odyna. Nordycki bóg jest zmuszony do życia wśród ludzi. Gdy Ziemię atakują ciemne siły Asgardu, Thor uczy się, jak być prawdziwym bohaterem. Thor (Chris Hemsworth) to potężny, lecz niezwykle arogancki wojownik.</p>
+
+</div>
+<a href= https://marvel.fandom.com/pl/wiki/Thor_Odinson_(Ziemia-616)#Seriale id="linki" target="_blank">Więcej o Thoru</a> 
+
+</body>
+</html>

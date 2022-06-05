@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.1.css">
+</head>
+<body>
+    <h1 id="up">Czarna Wdowa</h1>
+    <div class="topnav">
+        <a href="#gallery-container">Galeria zdjęć</a>
+        <a href="#inf">Ciekawe informacje</a>
+        <a href="#film">Kariera filmowa</a>
+        <a href="#linki">Inne ciekawe strony</a>
+        <a href="#ops"> Krótki opis</a>
+      </div>
+        <br>
+    <div id="gallery-container">
+    <div class="row">
+        <div class="column">
+          <img src="foto/CW1.jpg" alt=obraz onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/CW2.jpg" alt=obraz onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/CW3.jpg" alt=obraz onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="foto/CW1.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="foto/CW2.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="foto/CW3.jpg" style="width:100%" alt=obraz>
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/CW1.jpg" onclick="currentSlide(1)" alt="Celująca Czarna-Wdowa ">
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/CW2.jpg" onclick="currentSlide(2)" alt="Mroczna Czarna-Wdowa">
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/CW3.jpg" onclick="currentSlide(3)" alt="Celująca Czarna-Wdowa">
+          </div>
+        </div>
+    </div>
+</div>
+<br>
+<table>
+  <caption id="inf"> Ciekawe informacje</caption>
+    <tr>
+        <td>Pochodzenie</td>
+        <td>Rosyjskie</td>
+    </tr>
+    <tr>
+        <td>Płeć</td>
+        <td>Kobieta</td>
+    </tr>
+    <tr>
+        <td>Kolor oczu</td>
+        <td>Zielony</td>
+    </tr>
+    <tr>
+        <td>Miejsce śmierci</td>
+        <td>Vormir</td>
+    </tr>
+    <tr>
+        <td>Przyczyna śmierci</td>
+        <td>Upadek z wysokości</td>
+    </tr>
+    <tr>
+        <td>Umiejętności</td>
+        <td>Manipulacja</td>
+    </tr>
+    <tr>
+        <td>Twórca</td>
+        <td>Stan Lee</td>
+    </tr>
+</table>
+<div id="film">Popularne filmy z Czarną Wodową:</div>
+<br>
+<ul>
+    <li>Czarna Wdowa</li>
+    <li>Avengers: Koniec gry</li>
+    <li>Avengers</li>
+    <li>Kapitan Ameryka: Wojna bohaterów</li>
+    <li>Avengers:Wojna bez granic</li>
+</ul>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a class=comeback href="#up">Na początek</a>
+<div id="ops">
+  <p id=informs>W wyniku niebezpiecznego spisku i podejrzanych powiązań sprzed czasów drużyny Avengers, Natasha Romanoff aka Czarna Wdowa musi skonfrontować się z mrocznymi echami swojej przeszłości. Bohaterka stawia czoła groźnemu, potężnemu przeciwnikowi, który nie cofnie się przed niczym, by ją zniszczyć.</p>
+
+</div>
+<a href= https://marvel.fandom.com/pl/wiki/Natasha_Romanoff_(Ziemia-199999)#Bro%C5%84_i_zdolno%C5%9Bci id="linki" target="_blank">Więcej o Czarnej Wdowie</a> 
+
+</body>
+</html>

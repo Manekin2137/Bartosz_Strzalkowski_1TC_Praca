@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style5.css">
+</head>
+<body>
+    <h1 id="up">Loki</h1>
+    <div class="topnav">
+        <a href="#gallery-container">Galeria zdjęć</a>
+        <a href="#inf">Ciekawe informacje</a>
+        <a href="#film">Kariera filmowa</a>
+        <a href="#linki">Inne ciekawe strony</a>
+        <a href="#ops"> Krótki opis</a>
+      </div>
+        <br>
+    <div id="gallery-container">
+    <div class="row">
+        <div class="column">
+          <img src="foto/Loki1.jpg" alt=obraz onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/Loki2.jpg" alt=obraz onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/Loki3.jpg" alt=obraz onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="foto/Loki1.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="foto/Loki2.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="foto/Loki3.jpg" style="width:100%" alt=obraz>
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/Loki1.jpg" onclick="currentSlide(1)" alt="Myślący Loki ">
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/Loki2.jpg" onclick="currentSlide(2)" alt="Szczęśliwy Loki">
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/Loki3.jpg" onclick="currentSlide(3)" alt="Złowieszczy Loki">
+          </div>
+        </div>
+    </div>
+</div>
+<br>
+<table>
+  <caption id="inf">Ciekawe informacje</caption>
+    <tr>
+        <td>Pochodzenie</td>
+        <td>Asgardzkie</td>
+    </tr>
+    <tr>
+        <td>Płeć</td>
+        <td>Mężczyzna</td>
+    </tr>
+    <tr>
+        <td>Waga</td>
+        <td>238kg</td>
+    </tr>
+    <tr>
+        <td>Wzrost</td>
+        <td>193cm</td>
+    </tr>
+    <tr>
+        <td>Umiejętność</td>
+        <td>Magia</td>
+    </tr>
+    <tr>
+        <td>Zawód</td>
+        <td>Bóg kłamstw i psot</td>
+    </tr>
+    <tr>
+        <td>Twórca</td>
+        <td>Stan Lee</td>
+    </tr>
+</table>
+<div id="film">Popularne filmy z Lokim:</div>
+<br>
+<ul>
+    <li>Loki </li>
+    <li>Strażnicy Galaktyki</li>
+    <li>Hulk i agenci M.I.A.Z.G.I.</li>
+    <li>Avengers: Potęga i moc</li>
+    <li>Avengers: Zjednoczeni</li>
+</ul>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a class=comeback href="#up">Na początek</a>
+<div id="ops">
+  <p id=informs>Loki tak naprawdę jest lodowym olbrzymem. Skóra Lokiego, gdy jest olbrzymem jest niebieska. Po Ragnaroku Loki odrodził się jako kobieta. Loki w mitologii nordyckiej był bogiem ognia i oszustwa.</p>
+
+</div>
+<a href= https://marvel.fandom.com/pl/wiki/Loki_Laufeyson_(Ziemia-616)#Filmy id="linki" target="_blank">Więcej o Lokim</a> 
+
+</body>
+</html>

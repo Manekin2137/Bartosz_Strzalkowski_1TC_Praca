@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style6.css">
+</head>
+<body>
+    <h1 id="up">Spider-Man</h1>
+    <div class="topnav">
+        <a href="#gallery-container">Galeria zdjęć</a>
+        <a href="#inf">Ciekawe informacje</a>
+        <a href="#film">Kariera filowa</a>
+        <a href="#linki">Inne ciekawe strony</a>
+        <a href="#ops"> Krótki opis</a>
+      </div>
+        <br>
+    <div id="gallery-container">
+    <div class="row">
+        <div class="column">
+          <img src="foto/S1.JPG" alt=obraz onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/S2.jpg" alt=obraz onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/S3.jpg" alt=obraz onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="foto/S1.JPG" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="foto/S2.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="foto/S3.jpg" style="width:100%" alt=obraz>
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/S1.JPG" onclick="currentSlide(1)" alt="Przyczajony Spider-Man ">
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/S2.jpg" onclick="currentSlide(2)" alt="Pozujący Spider-Man">
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/S3.jpg" onclick="currentSlide(3)" alt="Spokojny Spider-Man">
+          </div>
+        </div>
+    </div>
+</div>
+<br>
+<table>
+  <caption id="inf">Ciekawe informacje</caption>
+    <tr>
+        <td>Pochodzenie</td>
+        <td>Amerykańskie</td>
+    </tr>
+    <tr>
+        <td>Płeć</td>
+        <td>Mężczyzna</td>
+    </tr>
+    <tr>
+        <td>Gatunek</td>
+        <td>Nadczłowiek</td>
+    </tr>
+    <tr>
+        <td>Waga</td>
+        <td>76kg</td>
+    </tr>
+    <tr>
+        <td>Umiejętność</td>
+        <td>Fizjologia pająka</td>
+    </tr>
+    <tr>
+        <td>Kolor oczu</td>
+        <td>Piwny</td>
+    </tr>
+    <tr>
+        <td>Twórca</td>
+        <td>Stan Lee</td>
+    </tr>
+</table>
+<div id="film">Popularne filmy z Spider-Man:</div>
+<br>
+<ul>
+    <li>Spider-Man</li>
+    <li>Niesamowity Spider-Man</li>
+    <li>Spider-Man 3</li>
+    <li>Spider-Man 2</li>
+    <li>Niesamowity Spider-Man 2</li>
+</ul>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a class=comeback href="#up">Na początek</a>
+<div id="ops">
+  <p id=informs>Przeciętny nastolatek, Peter Parker (Tobey Maguire) przeistacza się w superbohatera pod wpływem ukąszenia przez radioaktywnego pająka. Kiedy jego ukochany wuj zostaje brutalnie zamordowany przez włamywaczy, Peter przysięga sobie, że użyje swoich niezwykłych sił, aby pomścić jego śmierć.</p>
+
+</div>
+<a href= https://marvel.fandom.com/pl/wiki/Peter_Parker_(Ziemia-616) id="linki" target="_blank">Więcej o Spider-Man</a> 
+
+</body>
+</html>

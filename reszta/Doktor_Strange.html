@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <h1 id="up">Doktor Strange</h1>
+    <div class="topnav">
+        <a href="#gallery-container">Galeria</a>
+        <a href="#inf">Informacje</a>
+        <a href="#film">Kariera</a>
+        <a href="#linki">Inne ciekawe strony</a>
+        <a href="#ops"> Krótki opis</a>
+      </div>
+        <br>
+    <div id="gallery-container">
+    <div class="row">
+        <div class="column">
+          <img src="foto/DS1.jpg" alt=obraz onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/DS2.jpg" alt=obraz onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/DS3.jpeg" alt=obraz onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="foto/DS1.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="foto/DS2.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="foto/DS3.jpeg" style="width:100%" alt=obraz>
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/DS1.jpg" onclick="currentSlide(1)" alt="Skupiony Doktor Strange ">
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/DS2.jpg" onclick="currentSlide(2)" alt="Doktor Strange tworzący portal">
+          </div>
+      
+          <div class="column">
+            <img class="op" src="foto/DS3.jpeg" onclick="currentSlide(3)" alt="Zdziwiony Doktor Strange">
+          </div>
+        </div>
+    </div>
+</div>
+<br>
+<table>
+  <caption id="inf">Ciekawe informacje</caption>
+    <tr>
+        <td>Pochodzenie</td>
+        <td>Amerykańskie</td>
+    </tr>
+    <tr>
+        <td>Płeć</td>
+        <td>Mężczyzna</td>
+    </tr>
+    <tr>
+        <td>Przynależność</td>
+        <td> Illuminati</td>
+    </tr>
+    <tr>
+        <td>Waga</td>
+        <td>82kg</td>
+    </tr>
+    <tr>
+        <td>Umiejętność</td>
+        <td>Magia</td>
+    </tr>
+    <tr>
+        <td>Kolor oczu</td>
+        <td>Szare</td>
+    </tr>
+    <tr>
+        <td>Twórca</td>
+        <td>Stan Lee</td>
+    </tr>
+</table>
+<div id="film">Popularne filmy z Doktor Strange:</div>
+<br>
+<ul>
+    <li>Doktor Strange</li>
+    <li>Doktor Strange w multiwersum obłędu</li>
+    <li>Spider-Man: Bez drogi do domu</li>
+    <li>Avengers:Koniec gry</li>
+    <li>Avengers:Wojna bez granic</li>
+</ul>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a class=comeback href="#up">Na początek</a>
+<div id="ops">
+  <p id=informs>To historia światowej sławy neurochirurga, dr Stephena Strange'a, którego życie odmienił tragiczny wypadek samochodowy, odbierając mu sprawność w rękach. Kiedy tradycyjna medycyna zawiodła, w poszukiwaniu uzdrowienia i nadziei, Strange trafia do tajemniczej samotni, zwanej Kamar-Taj.</p>
+
+</div>
+<a href= https://marvel.fandom.com/pl/wiki/Stephen_Strange_(Ziemia-616) id="linki" target="_blank">Więcej o Doktor Strange</a> 
+
+</body>
+</html>
